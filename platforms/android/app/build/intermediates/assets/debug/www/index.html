@@ -34,16 +34,81 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
+
+
+        <!--AJAX HEAD API EXAMPLE START-->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sample AJAX Code</title>
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+            body {
+                background-color: black;
+                color:white;
+            }
+
+        </style>
+
+        <!--AJAX HEAD API EXAMPLE END-->
+
     </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
+    <!--<body>-->
+        <!--<div class="app">-->
+            <!--<h1>Apache Cordova</h1>-->
+            <!--<div id="deviceready" class="blink">-->
+                <!--<p class="event listening">Connecting to Device</p>-->
+                <!--<p class="event received">Device is Ready</p>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <!--AJAX BODY API EXAMPLE START-->
+
+
+        <center>
+            <table id="table2" ><tr><td>
+                <center>
+                    <div><h1><i class="fa fa-smile-o" aria-hidden="true"></i></h1>API CONTROL<img class="instructionsImg"></img></div>
+                    <br>
+                    <br>
+                    <br>
+                    API Key: <input type="text" id="apiKey" value="">
+                    <br>
+                    <br>
+                    <input type="checkbox" id="checkFake" onclick="changeFake()"> Generate fake motion (desktop debugging)
+                    <br>
+                    <br>
+                    <br>
+                    <button class="start" id="loadButton">
+                        <div class="text" id = "startText">START</div>
+                    </button>
+                    <button class="stop" id="stopButton">
+                        <div class="text" id = "startText">STOP</div>
+                    </button>
+                    <button class="upload" id="uploadButton">
+                        <div class="text" id = "startText">UPLOAD</div>
+                    </button>
+                    <br>
+                    <br>
+            </td></tr>
+                <tr><td><center>
+                    <div id="output" ></div>
+                    <div id="output2" ></div>
+                </td></tr>
+            </table>
+
+            <script language="javascript" type="text/javascript"  src='js/jquery.min.js'></script>
+            <script language="javascript" type="text/javascript" src="js/beat.js"></script>
+
+            <!--AJAX BODY API EXAMPLE END-->
+
+
+            <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
