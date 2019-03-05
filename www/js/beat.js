@@ -60,7 +60,9 @@ function stopRecording(){
 ///////////////////////////////////
 //register motion tracking	
 ///////////////////////////////////	
-var onSensorCall = function(event){onSensorChanged([event.accelerationIncludingGravity.x,event.accelerationIncludingGravity.y,event.accelerationIncludingGravity.z]);};
+var onSensorCall = function(event){
+    onSensorChanged([event.accelerationIncludingGravity.x,event.accelerationIncludingGravity.y,event.accelerationIncludingGravity.z]);
+};
 
 function startRecording(){	
 	stopRecording();
@@ -93,7 +95,9 @@ function onSensorChanged(axes){
 	var x = axes[0];
 	var y = axes[1];
 	var z = axes[2];
-	
+    console.log('X: ', x);
+    console.log('y: ', y);
+    console.log('z: ', z);
 	if (cur_time==prev_time || x == null){return;}
 	if (T.length>2){
 		sampling_rate = (cur_time-prev_time);
@@ -101,7 +105,7 @@ function onSensorChanged(axes){
 	}
 	
 	T.push(cur_time*1000000);
-	X.push(x); Y.push(y); Z.push(z);	
+	X.push(x); Y.push(y); Z.push(z);
 		
 	number_samples = number_samples + 1;							
 
