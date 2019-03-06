@@ -142,6 +142,56 @@ h1 {
     display: none;
 }
 
+@font-face {
+    font-family: "Montserrat-medium";
+    src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
+
+#you_title{
+    font-family: 'Montserrat-medium', Arial, sans-serif;
+    padding-top: 10%;
+    font-size: 30px;
+    margin: 0 auto;
+    color: white;
+}
+
+#heart_container{
+    height: 35%;
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 25%;
+}
+
+#button_container{
+    padding-top: 7%;
+    display: flex;
+    align-items: center;
+}
+
+#start_button{
+}
+
+#stop_button{
+    display: none;
+}
+
+#heart_img{
+    width: 100%;
+    height: auto;
+}
+
+
+#lung_container{
+    height: 35%;
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 25%;
+}
+#lung_img{
+    width: 100%;
+    height: auto;
+}
+
 #team_select{
     background-image: url("../assets/img/team_select.png");
     display: none;
