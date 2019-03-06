@@ -24,6 +24,7 @@ body, html {
     height:100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Portrait layout (default) */
@@ -113,6 +114,29 @@ h1 {
     display: none;
 }
 
+#main_menu_img{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    /*position:absolute;*/
+}
+#team_button {
+    height: 40%;
+    width: 70%;
+    padding-top: 16%;
+}
+
+#you_button {
+    height: 40%;
+    width: 70%;
+    padding-left: 30%;
+}
+
+
+#right_triangle {
+
+}
+
 #local_recording{
     background-image: url("../assets/img/local_recording.png");
     display: none;
@@ -123,6 +147,11 @@ h1 {
     display: none;
 }
 
+#s2v_team{
+    margin-left: 10%;
+    width: 32%;
+    height: 20%;
+}
 #player_list{
     background-image: url("../assets/img/player_list.png");
     display: none;

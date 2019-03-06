@@ -69,7 +69,14 @@
 
         <!--MAIN MENU START-->
         <div id="main_menu" class="view">
+            <img id="main_menu_img" usemap="#triangles_map" src="assets/img/main_menu.png">
+            <map name="triangles_map">
+                <area alt="left" id="left_triangle" coords="744,1329,3,1331,2,6" shape="poly">
+                <area alt="right" id="right_triangle" coords="747,1330,3,2,748,0" shape="poly">
+            </map>
 
+
+            </div>
 
         </div>
         <!--MAIN MENU END-->
@@ -151,7 +158,10 @@
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/image-map-resizer/js/imageMapResizer.js"></script>
         <script type="text/javascript" src="js/load_screen.js"></script>
+        <script type="text/javascript" src="js/main_menu.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+
 
 </html>

@@ -109,8 +109,21 @@ h1 {
 }
 
 #main_menu{
-    background-image: url("../assets/img/main_menu.png");
+    /*background-image: url("../assets/img/main_menu.png");*/
     display: none;
+}
+#main_menu_img{
+    height:100%;
+    width:100%;
+    object-fit: fill;
+    /*position:absolute;*/
+}
+#left_triangle {
+
+}
+
+#right_triangle {
+
 }
 
 #local_recording{

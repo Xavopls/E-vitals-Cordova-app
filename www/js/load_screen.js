@@ -1,13 +1,14 @@
 // METHODS
+var main_menu = $('#main_menu');
+var load_screen = $('#load_screen');
 
 function fadeOutTransition() {
-    var load_screen = $('#load_screen');
     load_screen.delay(2000).fadeOut();
     setTimeout(function(){
         load_screen.hide();
-        $('#main_menu').show(); }
+        main_menu.show();
+        }
         , 2600);
-
 }
 
 
