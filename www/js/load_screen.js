@@ -1,3 +1,5 @@
+var current_view;
+
 // METHODS
 var main_menu = $('#main_menu');
 var load_screen = $('#load_screen');
@@ -9,6 +11,9 @@ function fadeOutTransition() {
         main_menu.show();
         }
         , 2600);
+
+    current_view = 'main_menu';
+
 }
 
 

@@ -106,7 +106,7 @@ h1 {
 }
 
 #load_screen{
-    background-image: url("../assets/img/load_screen.jpeg");
+    background-image: url("../assets/img/load_screen.png");
 }
 
 #main_menu{
@@ -147,31 +147,74 @@ h1 {
     src: url("../assets/fonts/Montserrat-Medium.ttf");
 }
 
-#you_title{
-    font-family: 'Montserrat-medium', Arial, sans-serif;
-    padding-top: 10%;
-    font-size: 30px;
-    margin: 0 auto;
-    color: white;
+@font-face {
+    font-family: "cyberdynec";
+    src: url("../assets/fonts/cyberdynecondital.ttf");
 }
+
+/*#you_title{*/
+    /*font-family: 'Montserrat-medium', Arial, sans-serif;*/
+    /*padding-top: 10%;*/
+    /*font-size: 30px;*/
+    /*margin: 0 auto;*/
+    /*color: white;*/
+/*}*/
 
 #heart_container{
-    height: 35%;
-    width: 35%;
+    height: 15%;
+    width: 30%;
     margin: 0 auto;
-    padding-top: 25%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.number{
+    font-family: 'cyberdynec', Arial, sans-serif;
+    color: white;
+}
+.label{
+    font-family: 'Montserrat-medium', Arial, sans-serif;
+
+}
+.column {
+    float: left;
+    width: 33%;
+    text-align: center;
 }
 
+h2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#current_heart_rate_container{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 25px;
+}
+#current_lung_rate_container{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 25px;
+}
 #button_container{
-    padding-top: 7%;
-    display: flex;
-    align-items: center;
+    padding-top: 6%;
+    height: 10%;
+    width: 100%;
 }
 
 #start_button{
+    margin-left: 42%;
+    font-family: 'Montserrat-medium', Arial, sans-serif;
 }
 
 #stop_button{
+    margin-left: 42%;
+    font-family: 'Montserrat-medium', Arial, sans-serif;
     display: none;
 }
 
@@ -182,10 +225,10 @@ h1 {
 
 
 #lung_container{
-    height: 35%;
-    width: 35%;
+    height: 18%;
+    width: 30%;
     margin: 0 auto;
-    padding-top: 25%;
+    padding-top: 2%;
 }
 #lung_img{
     width: 100%;
@@ -206,4 +249,27 @@ h1 {
     background-image: url("../assets/img/player_list.png");
     display: none;
 }
+
+
+
+.btn {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+}
+
+.yellow {
+    color: white;
+    border: 2px white solid;
+}
+
+
 

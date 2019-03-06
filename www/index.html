@@ -81,17 +81,55 @@
 
         <!--LOCAL RECORDING START-->
         <div id="local_recording" class="view">
-            <h1 id="you_title">Local data</h1>
+            <!--<h1 id="you_title">Local data</h1>-->
             <div id="heart_container">
                 <img id="heart_img" src="assets/img/heart.png" alt="">
             </div>
+            <div id="current_heart_rate_container">
+                <h2 id="current_heart_rate" class="number">0</h2>
+            </div>
+
+            <div id="heart_rate_statistics_container" class="row">
+                <div class="column">
+                    <h3 class="label">Min</h3>
+                    <h2 id="min_heart_rate" class="number">0</h2>
+                </div>
+                <div class="column">
+                    <h3 class="label">Avg</h3>
+                    <h2 id="avg_heart_rate" class="number">0</h2>
+                </div>
+                <div class="column">
+                    <h3 class="label">Max</h3>
+                    <h2 id="max_heart_rate" class="number">0</h2>
+                </div>
+            </div>
+
             <div id="button_container">
-                <button id="start_button">Start</button>
-                <button id="stop_button">Stop</button>
+                <a id="start_button" class="btn yellow">Start</a>
             </div>
             <div id="lung_container">
                 <img id="lung_img"src="assets/img/lung.png" alt = "">
             </div>
+
+            <div id="current_lung_rate_container">
+                <h2 id="current_lung_rate" class="number">0</h2>
+            </div>
+
+            <div id="lung_rate_statistics_container" class="row">
+                <div class="column">
+                    <h3 class="label">Min</h3>
+                    <h2 id="min_lung_rate" class="number">0</h2>
+                </div>
+                <div class="column">
+                    <h3 class="label">Avg</h3>
+                    <h2 id="avg_lung_rate" class="number">0</h2>
+                </div>
+                <div class="column">
+                    <h3 class="label">Max</h3>
+                    <h2 id="max_lung_rate" class="number">0</h2>
+                </div>
+            </div>
+
 
         </div>
         <!--LOCAL RECORDING END-->
@@ -169,6 +207,7 @@
         <script type="text/javascript" src="js/load_screen.js"></script>
         <script type="text/javascript" src="js/main_menu.js"></script>
         <script type="text/javascript" src="js/team_select.js"></script>
+        <script type="text/javascript" src="js/local_recording.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 
 
