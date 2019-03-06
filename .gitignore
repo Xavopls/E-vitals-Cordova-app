@@ -1,0 +1,6 @@
+# Specify filepatterns you want git to ignore.
+
+hooks/
+node_modules/
+platforms/
+plugins/
