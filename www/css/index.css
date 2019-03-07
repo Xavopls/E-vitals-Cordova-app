@@ -121,7 +121,7 @@ h1 {
     /*position:absolute;*/
 }
 #team_button {
-    height: 40%;
+    height: 60%;
     width: 70%;
     padding-top: 16%;
 }
@@ -250,6 +250,55 @@ h2{
     display: none;
 }
 
+.horizontal_container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.player{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+}
+#s2v_logo_container{
+    height: 15%;
+    width: 100%;
+    margin: 0 auto;
+}
+#img_logo_s2v{
+    display:block;
+    margin:auto;
+    width: 35%;
+    height: auto;
+}
+.player_img{
+    width: 100%;
+    height: auto;
+}
+
+.player_heart_label{
+    position: absolute;
+    bottom: 18%;
+    left: 20%;
+    font-family: 'Montserrat-medium', Arial, sans-serif;
+    font-size: 25px;
+
+}
+.player_lung_label{
+    position: absolute;
+    bottom: 18%;
+    right: 30.5%;
+    font-family: 'Montserrat-medium', Arial, sans-serif;
+    font-size: 25px;
+}
 
 
 .btn {
@@ -265,6 +314,7 @@ h2{
     -o-transition: .3s;
     display: inline-block;
 }
+
 
 .yellow {
     color: white;

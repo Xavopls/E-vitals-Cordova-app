@@ -32,23 +32,28 @@ function generateRandomValues() {
     $('#max_lung_rate').text(Math.max(...breath_rate_values).toString());
 
 }
-
+var IntervalId;
 $('#start_button').on("click", function() {
 
     if (counter_started){
+        if (IntervalId){
+            clearInterval(IntervalId);
+        }
         counter_started = false;
         $('#start_button').text('Start');
     }
 
     else{
         counter_started = true;
+        IntervalId = setInterval(generateRandomValues, 2000);
         $('#start_button').text('Stop');
-        setTimeout(generateRandomValues, 1000);
-        setTimeout(generateRandomValues, 2000);
-        setTimeout(generateRandomValues, 3000);
-        setTimeout(generateRandomValues, 4000);
-        setTimeout(generateRandomValues, 5000);
-        setTimeout(generateRandomValues, 6000);
+        //
+        // setTimeout(generateRandomValues, 1000);
+        // setTimeout(generateRandomValues, 2000);
+        // setTimeout(generateRandomValues, 3000);
+        // setTimeout(generateRandomValues, 4000);
+        // setTimeout(generateRandomValues, 5000);
+        // setTimeout(generateRandomValues, 6000);
     }
 
 
@@ -56,6 +61,7 @@ $('#start_button').on("click", function() {
 });
 
 function cleanLabels() {
+    //  LOCAL RECORDING LABELS
     $('#current_heart_rate').text("0");
     $('#min_heart_rate').text("0");
     $('#avg_heart_rate').text("0");
@@ -64,4 +70,17 @@ function cleanLabels() {
     $('#min_lung_rate').text("0");
     $('#avg_lung_rate').text("0");
     $('#max_lung_rate').text("0");
+
+    //S2V LABELS
+    $('#player_1_heart_label').text("0");
+    $('#player_1_lung_label').text("0");
+    $('#player_2_heart_label').text("0");
+    $('#player_2_lung_label').text("0");
+    $('#player_3_heart_label').text("0");
+    $('#player_3_lung_label').text("0");
+    $('#player_4_heart_label').text("0");
+    $('#player_4_lung_label').text("0");
+    $('#player_5_heart_label').text("0");
+    $('#player_5_lung_label').text("0");
+
 }
